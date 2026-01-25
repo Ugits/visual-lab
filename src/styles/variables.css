@@ -1,0 +1,106 @@
+:root {
+  /* 
+   * ==========================================
+   * LAYER 1: PRIMITIVES
+   * Raw values. DO NOT use directly in components.
+   * ==========================================
+   */
+
+  /* Brand Colors */
+  --vl-brand-500: #3b82f6; /* Example Blue */
+  --vl-brand-600: #2563eb;
+
+  /* Neutrals (Grays) */
+  --vl-gray-50: #f9fafb;
+  --vl-gray-100: #f3f4f6;
+  --vl-gray-200: #e5e7eb;
+  --vl-gray-300: #d1d5db;
+  --vl-gray-400: #9ca3af;
+  --vl-gray-500: #6b7280;
+  --vl-gray-600: #4b5563;
+  --vl-gray-700: #374151;
+  --vl-gray-800: #1f2937;
+  --vl-gray-900: #111827;
+  --vl-gray-950: #030712;
+
+  /* Black & White */
+  --vl-white: #ffffff;
+  --vl-black: #000000;
+
+  /* Spacing Scale */
+  --vl-space-0: 0px;
+  --vl-space-1: 0.25rem; /* 4px */
+  --vl-space-2: 0.5rem; /* 8px */
+  --vl-space-3: 0.75rem; /* 12px */
+  --vl-space-4: 1rem; /* 16px */
+  --vl-space-6: 1.5rem; /* 24px */
+  --vl-space-8: 2rem; /* 32px */
+  --vl-space-12: 3rem; /* 48px */
+  --vl-space-16: 4rem; /* 64px */
+
+  /* Font Sizes */
+  --vl-text-xs: 0.75rem;
+  --vl-text-sm: 0.875rem;
+  --vl-text-base: 1rem;
+  --vl-text-lg: 1.125rem;
+  --vl-text-xl: 1.25rem;
+  --vl-text-2xl: 1.5rem;
+  --vl-text-4xl: 2.25rem;
+
+  /* Border Radius */
+  --vl-radius-sm: 0.125rem;
+  --vl-radius-md: 0.375rem;
+  --vl-radius-lg: 0.5rem;
+  --vl-radius-full: 9999px;
+
+  /* 
+   * ==========================================
+   * LAYER 2: SEMANTICS
+   * Usage-based aliases. Use these globally.
+   * ==========================================
+   */
+
+  /* Backgrounds */
+  --vl-bg-base: var(--vl-gray-950);
+  --vl-bg-surface: var(--vl-gray-900);
+  --vl-bg-surface-hover: var(--vl-gray-800);
+  --vl-bg-overlay: rgba(0, 0, 0, 0.5);
+
+  /* Text Colors */
+  --vl-text-main: var(--vl-gray-50);
+  --vl-text-secondary: var(--vl-gray-400);
+  --vl-text-inverse: var(--vl-gray-950);
+  --vl-text-brand: var(--vl-brand-500);
+
+  /* Borders */
+  --vl-border-base: var(--vl-gray-800);
+  --vl-border-highlight: var(--vl-gray-700);
+  --vl-border-focus: var(--vl-brand-500);
+
+  /* Actions */
+  --vl-action-primary-bg: var(--vl-brand-600);
+  --vl-action-primary-hover: var(--vl-brand-500);
+  --vl-action-primary-text: var(--vl-white);
+
+  /* 
+   * ==========================================
+   * LAYER 3: COMPONENT TOKENS
+   * Specific overrides.
+   * ==========================================
+   */
+
+  /* Sidebar */
+  --vl-sidebar-bg: rgba(19, 19, 19, 0.61);
+  --vl-sidebar-width: 14rem;
+  --vl-sidebar-border-color: rgba(255, 255, 255, 0.185);
+
+  /* Item */
+  --vl-item-hover-bg: rgba(255, 255, 255, 0.1);
+  --vl-item-border: rgba(255, 255, 255, 0.808);
+
+  /* Sidebar Animation */
+  --vl-sidebar-blind-border: rgba(255, 255, 255, 0.692);
+  --vl-glow-base: rgba(255, 255, 255, 0.8);
+  --vl-glow-strong: rgba(255, 255, 255, 1);
+  --vl-glow-dim: rgba(255, 255, 255, 0.4);
+}

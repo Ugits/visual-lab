@@ -1,0 +1,67 @@
+body {
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--vl-text-main);
+}
+
+h1 {
+  font-size: var(--vl-text-4xl);
+}
+h2 {
+  font-size: var(--vl-text-2xl);
+}
+h3 {
+  font-size: var(--vl-text-xl);
+}
+h4 {
+  font-size: var(--vl-text-lg);
+}
+
+/* Utilities */
+.vl-text-xs {
+  font-size: var(--vl-text-xs);
+}
+.vl-text-sm {
+  font-size: var(--vl-text-sm);
+}
+.vl-text-base {
+  font-size: var(--vl-text-base);
+}
+.vl-text-lg {
+  font-size: var(--vl-text-lg);
+}
+.vl-text-xl {
+  font-size: var(--vl-text-xl);
+}
+
+.vl-font-normal {
+  font-weight: 400;
+}
+.vl-font-medium {
+  font-weight: 500;
+}
+.vl-font-bold {
+  font-weight: 700;
+}
+
+.vl-text-muted {
+  color: var(--vl-text-secondary);
+}
+.vl-text-brand {
+  color: var(--vl-text-brand);
+}
+.vl-text-center {
+  text-align: center;
+}

@@ -1,9 +1,7 @@
+import { VisualLab } from "./page/VisualLab/VisualLab";
+
 function App() {
-  return (
-    <div>
-      <h1>visual-lab</h1>
-    </div>
-  );
+  return <VisualLab />;
 }
 
 export default App;

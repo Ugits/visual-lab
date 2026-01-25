@@ -1,75 +1,55 @@
-# React + TypeScript + Vite
+# Visual Lab 🧪
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collection of visual experiments and interactive components built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visual Lab is a playground for testing and demonstrating various UI/UX concepts, animations, and generative art techniques. It is designed to be a modular environment where different "labs" can be created and explored.
 
-## React Compiler
+## 🚀 Getting Started
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Prerequisites
 
-Note: This will impact Vite dev & build performances.
+- Node.js (Latest LTS recommended)
+- npm
 
-## Expanding the ESLint configuration
+### Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1.  Clone the repository:
+    ```bash
+    git clone <repository-url>
+    ```
+2.  Navigate to the project directory:
+    ```bash
+    cd visual-lab
+    ```
+3.  Install dependencies:
+    ```bash
+    npm install
+    ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Running the App
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Start the development server:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open your browser and navigate to the local URL (usually `http://localhost:5173`).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧬 Project Structure
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The project is organized to separate independent visual experiments ("labs") from the main application layout.
+
+- `src/page/VisualLab`: The main entry point and layout for the application, including the sidebar and main content area.
+- `src/components/labs`: Contains the individual visual experiments.
+  - `NoiseCanvas`: A canvas-based experiment generating noise patterns with interactive thumbnail resizing.
+- `src/config/labs.tsx`: Configuration file to register and manage available labs.
+
+## 🛠️ Tech Stack
+
+- **React**: UI Library
+- **TypeScript**: Static Typing
+- **Vite**: Build Tool & Dev Server
+- **CSS**: Styling (Modular & Global)
