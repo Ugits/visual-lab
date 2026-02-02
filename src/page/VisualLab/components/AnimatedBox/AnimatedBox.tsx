@@ -10,7 +10,7 @@ export const AnimatedBox = ({ unboxed, onToggle }: AnimatedBoxProps) => {
   return (
     <div
       className={`title-header-box ${unboxed ? "unboxed" : ""}`}
-      onClick={onToggle}
+      onClick={() => !unboxed && onToggle()}
     >
       <div className="initial-box-row-container">
         <div className="initial-box-row-1">

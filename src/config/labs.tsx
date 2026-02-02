@@ -1,5 +1,7 @@
 import type { ReactNode } from "react";
-import NoiseCanvas from "../components/labs/NoiseCanvas";
+import NoiseCanvas from "../labs/NoiseCanvas";
+import Multiplane from "../labs/Multiplane/Multiplane";
+import SlidingTiles from "../labs/SlidingTiles/SlidingTiles";
 
 export interface Lab {
   id: string;
@@ -16,5 +18,19 @@ export const LABS: Lab[] = [
     description: "Click to pause",
     component: <NoiseCanvas />,
     thumbnail: <NoiseCanvas isThumbnail />,
+  },
+  {
+    id: "multiplane",
+    title: "Multiplane Camera",
+    description: "Disney's 7-layer depth effect",
+    component: <Multiplane />,
+    thumbnail: <Multiplane isThumbnail />,
+  },
+  {
+    id: "sliding-tiles",
+    title: "Sliding Tiles",
+    description: "Click to pause",
+    component: <SlidingTiles />,
+    thumbnail: <SlidingTiles isThumbnail />,
   },
 ];

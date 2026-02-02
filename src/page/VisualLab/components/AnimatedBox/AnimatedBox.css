@@ -60,6 +60,7 @@
 .title-header-box.unboxed {
   border-bottom: none;
   padding: 0;
+  pointer-events: none;
 }
 
 .initial-box-row-container {
